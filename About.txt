@@ -1,0 +1,11 @@
+Encryptions in the project :- 
+
+Aes,
+DES,
+RC2,
+Rijndael,
+TripleDES,
+
+Password Derivres :-
+
+Rfc2898DeriveBytes
