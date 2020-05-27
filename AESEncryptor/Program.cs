@@ -7,9 +7,7 @@ using System.Threading.Tasks;
 namespace AESEncryptor
 {
     class Program
-    {
-      
-    
+    {    
         static void Main(string[] args)
         {
             CommandExecutor commandExecutor = new CommandExecutor();
