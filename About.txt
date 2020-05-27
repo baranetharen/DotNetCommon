@@ -8,4 +8,4 @@ Encryptions in the project :-
 
 Password Derivres :-
 
-6) Rfc2898DeriveBytes
+1) Rfc2898DeriveBytes
