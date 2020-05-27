@@ -5,3 +5,7 @@ Encryptions in the project :-
 3) RC2,
 4) Rijndael,
 5) TripleDES,
+
+Password Derivres :-
+
+6) Rfc2898DeriveBytes
