@@ -1,0 +1,6 @@
+F:\WorkFromHome\AESEncryption\AESEncryptor\AESEncryptor\bin\Debug\AESEncryptor.exe.config
+F:\WorkFromHome\AESEncryption\AESEncryptor\AESEncryptor\bin\Debug\AESEncryptor.exe
+F:\WorkFromHome\AESEncryption\AESEncryptor\AESEncryptor\bin\Debug\AESEncryptor.pdb
+F:\WorkFromHome\AESEncryption\AESEncryptor\AESEncryptor\obj\Debug\AESEncryptor.csproj.CoreCompileInputs.cache
+F:\WorkFromHome\AESEncryption\AESEncryptor\AESEncryptor\obj\Debug\AESEncryptor.exe
+F:\WorkFromHome\AESEncryption\AESEncryptor\AESEncryptor\obj\Debug\AESEncryptor.pdb
