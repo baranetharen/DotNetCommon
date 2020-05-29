@@ -93,6 +93,11 @@ namespace AESEncryptor
                 Console.WriteLine("Error in Encryption");
             }
         }
+        public void GenerateKeys(string text, string password, out IEnumerable<SecurityKey> securityKeys)
+        {
+            SecurityKeyGenerator securityKeyGenerator = new SecurityKeyGenerator();
+            securityKeys = securityKeyGenerator.GenerateKeys(text, password);
+        }
         public void GenerateText(IEnumerable<string> keys, string password)
         {
             SecurityKeyGenerator securityKeyGenerator = new SecurityKeyGenerator();
@@ -107,6 +112,11 @@ namespace AESEncryptor
             {
                 Console.WriteLine("Error in Decrypting the Keys");
             }
+        }
+        public void GenerateText(IEnumerable<string> keys, string password, out string text)
+        {
+            SecurityKeyGenerator securityKeyGenerator = new SecurityKeyGenerator();
+            text = securityKeyGenerator.GenerateTextFromKeys(keys.Select(x => new SecurityKey() { Key = x }), password);
         }
     }
 }
