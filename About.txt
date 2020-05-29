@@ -9,5 +9,3 @@ Encryptions in the project :-
 Password Derivres :-
 
 1) Rfc2898DeriveBytes (Default)
-
-The projects are made using Csharp as a programming language 
