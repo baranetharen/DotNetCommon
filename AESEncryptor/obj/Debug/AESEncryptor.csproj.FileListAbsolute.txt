@@ -1,7 +1,0 @@
-F:\WorkFromHome\AESEncryption\AESEncryptor\AESEncryptor\bin\Debug\AESEncryptor.pdb
-F:\WorkFromHome\AESEncryption\AESEncryptor\AESEncryptor\obj\Debug\AESEncryptor.csproj.CoreCompileInputs.cache
-F:\WorkFromHome\AESEncryption\AESEncryptor\AESEncryptor\obj\Debug\AESEncryptor.pdb
-F:\WorkFromHome\AESEncryption\AESEncryptor\AESEncryptor\obj\Debug\AESEncryptor.csprojAssemblyReference.cache
-F:\WorkFromHome\AESEncryption\AESEncryptor\AESEncryptor\bin\Debug\AESEncryptor.dll.config
-F:\WorkFromHome\AESEncryption\AESEncryptor\AESEncryptor\bin\Debug\AESEncryptor.dll
-F:\WorkFromHome\AESEncryption\AESEncryptor\AESEncryptor\obj\Debug\AESEncryptor.dll
