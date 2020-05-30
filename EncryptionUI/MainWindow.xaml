@@ -1,0 +1,56 @@
+﻿<Window x:Class="EncryptionUI.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:EncryptionUI"
+        xmlns:core="clr-namespace:System;assembly=mscorlib"
+        xmlns:Encryption="clr-namespace:AESEncryptor;assembly=AESEncryptor"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="833">
+    <Window.Resources>
+        <Style x:Key="textboxstyle" TargetType="TextBlock">
+            <Setter Property="FontSize" Value="12"></Setter>
+        </Style>
+    </Window.Resources>
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition  Height="Auto"/>
+            <RowDefinition  Height="Auto"/>
+            <RowDefinition  Height="Auto"/>
+            <RowDefinition  Height="Auto"/>
+            <RowDefinition  Height="Auto"/>
+            <RowDefinition  Height="Auto"/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="1*"/>
+            <ColumnDefinition Width="2*"/>
+        </Grid.ColumnDefinitions>
+        <TextBlock Text="Plain Text" Margin="5" Style="{StaticResource textboxstyle}"/>
+        <TextBox Name="Text" Text="{Binding Text, Mode=TwoWay}" Margin="5,5,0,5" Grid.Column="1"  Width="351" HorizontalAlignment="Left"/>
+        <TextBlock Text="Password" Grid.Row="1" Margin="5" Style="{StaticResource textboxstyle}"/>
+        <PasswordBox x:Name="passbox" Grid.Row="1" Grid.Column="1" Margin="5" Width="150" HorizontalAlignment="Left"/>
+        <StackPanel Grid.Row="2" Orientation="Vertical">
+            <TextBlock Text="No Of Keys To Generate" Margin="5" Style="{StaticResource textboxstyle}"/>
+            <Label Content="Min =0 Max=3" FontSize="11"></Label>
+        </StackPanel>
+        <ComboBox Name="NoKeys" Grid.Row="2" Grid.Column="1" Width="150" HorizontalAlignment="Left" Margin="5,15,0,16">
+            <ComboBoxItem Content="1"/>
+            <ComboBoxItem Content="2"/>
+            <ComboBoxItem Content="3"/>
+        </ComboBox>
+        <TextBlock Text="Encryption Type" Margin="5"  Grid.Row="3" Style="{StaticResource textboxstyle}"/>
+        <ComboBox Name="command"  Grid.Row="3"  Width="150"  Margin="5"  Grid.Column="1" HorizontalAlignment="Left">
+            <ComboBoxItem Content="From KEY"/>
+            <ComboBoxItem Content="To KEY"/>
+        </ComboBox>
+        <TextBlock Text="Generated Keys"  Grid.Row="4" Margin="5" Style="{StaticResource textboxstyle}"/>
+        <TextBox Name="tKeys" Width="334"  Margin="5,5,0,6"  Grid.Row="4" Grid.Column="1" 
+                 Height="150" VerticalScrollBarVisibility="Auto" HorizontalAlignment="Left" TextWrapping="NoWrap"
+                 AcceptsReturn="True"/>
+        <Button Grid.Row="5" Margin="189,44,189,-29" Grid.Column="1" Width="150" Content="Generate" 
+                Command="{Binding passwordUpdater}" CommandParameter="{Binding ElementName=passbox}"
+                Click="Button_Click"
+                />
+    </Grid>
+</Window>

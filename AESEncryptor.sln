@@ -5,6 +5,8 @@ VisualStudioVersion = 15.0.28307.852
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AESEncryptor", "AESEncryptor\AESEncryptor.csproj", "{A5E15E9C-8A70-46BC-BB3A-87258E3498E9}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EncryptionUI", "EncryptionUI\EncryptionUI.csproj", "{6EDE0739-B3F6-4A37-8A1A-6067AC64BC55}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,10 @@ Global
 		{A5E15E9C-8A70-46BC-BB3A-87258E3498E9}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A5E15E9C-8A70-46BC-BB3A-87258E3498E9}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A5E15E9C-8A70-46BC-BB3A-87258E3498E9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6EDE0739-B3F6-4A37-8A1A-6067AC64BC55}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6EDE0739-B3F6-4A37-8A1A-6067AC64BC55}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6EDE0739-B3F6-4A37-8A1A-6067AC64BC55}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6EDE0739-B3F6-4A37-8A1A-6067AC64BC55}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
